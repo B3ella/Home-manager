@@ -24,6 +24,10 @@
     (pkgs.writeShellScriptBin "nrs" ''
       sudo nixos-rebuild switch
     '')
+    (pkgs.writeShellScriptBin "nrb" ''
+      sudo nixos-rebuild boot
+      reboot
+    '')
     (pkgs.writeShellScriptBin "hms" ''
       home-manager switch
     '')
