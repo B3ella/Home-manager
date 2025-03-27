@@ -19,6 +19,7 @@
     '')
     (pkgs.writeShellScriptBin "edithome" ''
       cd ~/.config/home-manager
+      nvim .
     '')
     (pkgs.writeShellScriptBin "nrs" ''
       sudo nixos-rebuild switch
