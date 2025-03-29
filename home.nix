@@ -60,10 +60,31 @@
 	size = 15.0;
       };
 
+      bars = [
+        {
+	  colors = {
+	    activeWorkspace = {
+              background = "#000000";
+              border = "#000000";
+              text = "#ffffff";
+	    };
+
+	    background = "#263014";
+	    statusline = "#ffffff";
+	  };
+	  fonts = {
+	    names = ["Dalfitra"];
+	    style = "Regular";
+	    size = 12.0;
+	  };
+	  statusCommand = "i3status";
+	}
+      ];
+
       keybindings = {
         "Mod1+Return" = "exec kitty";
         "Mod1+q" = "kill";
-        "Mod1+d" = "exec rofi -show drun -show-icons";
+        "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
 	"Mod1+g" = "exec firefox";
 	"Mod1+o" = "exec obsidian";
 
