@@ -30,6 +30,30 @@
     '')
     (pkgs.writeShellScriptBin "hms" ''
       home-manager switch
+      reloadi3
+    '')
+    (pkgs.writeShellScriptBin "reloadi3" ''
+      i3-msg reload
+      i3-msg restart
+    '')
+    (pkgs.writeShellScriptBin "status_bar" ''
+      while :
+      do 
+	echo $(myDate) " | " $(systemStatus) " | " $(myBattery) " | " $(myConnection) 	
+	sleep 5
+      done
+    '')
+    (pkgs.writeShellScriptBin "myDate" ''
+      date -R | cut -d'-' -f 1
+    '')
+    (pkgs.writeShellScriptBin "myBattery" ''
+      echo $(echo -e "\U1F50B") $(battery | cut -d' ' -f 2)%
+    '')
+    (pkgs.writeShellScriptBin "systemStatus" ''
+      echo $(temp)c
+    '')
+    (pkgs.writeShellScriptBin "myConnection" ''
+      nmcli --get-values name -c no connection show --active | head -n 1
     '')
   ];
 
@@ -77,7 +101,7 @@
 	    style = "Regular";
 	    size = 12.0;
 	  };
-	  statusCommand = "i3status";
+	  statusCommand = "status_bar";
 	}
       ];
 
