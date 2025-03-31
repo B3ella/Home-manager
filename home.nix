@@ -38,13 +38,6 @@
       reloadi3
     '')
   ];
-
-  programs.kitty = {
-    settings = {
-      background_opacity = 0;
-    };
-  };
-
   
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
