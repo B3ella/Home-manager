@@ -3,6 +3,7 @@
 { 
   imports = [
     ./modules/i3.nix
+    ./modules/alacritty.nix
   ];
 
   home.username = "bella";
