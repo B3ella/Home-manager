@@ -20,13 +20,16 @@
       echo $(echo -e "\U1F50B") $(battery | cut -d' ' -f 2)%
     '')
     (pkgs.writeShellScriptBin "systemStatus" ''
-      echo $(temp)c, $(myDisk)
+      echo $(temp)c, $(myDisk), $(myMem)
     '')
     (pkgs.writeShellScriptBin "myConnection" ''
       nmcli --get-values name -c no connection show --active | head -n 1
     '')
     (pkgs.writeShellScriptBin "myDisk" ''
       df -h | grep /dev/nvme0n1p2 | cut -d' ' -f 8
+    '')
+    (pkgs.writeShellScriptBin "myMem" ''
+      free -h | grep Mem | cut -d' ' -f 19
     '')
   ];
 
