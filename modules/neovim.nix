@@ -11,6 +11,11 @@
       style = "dark";
     };
 
+    options = {
+      wrap = false;
+      tabstop = 2;
+    };
+
     viAlias = true;
     vimAlias = true;
 
