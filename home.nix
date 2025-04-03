@@ -4,7 +4,9 @@
   imports = [
     ./modules/i3.nix
     ./modules/alacritty.nix
+    ./modules/neovim.nix
   ];
+  programs.nvf.enableManpages = true;
 
   home.username = "bella";
   home.homeDirectory = "/home/bella";
