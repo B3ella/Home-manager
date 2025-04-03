@@ -28,5 +28,13 @@
       python.enable = true;
       markdown.enable = true;
     };
+    keymaps = [
+      {
+        key = "<leader>pv";
+        mode = "n";
+        silent = true;
+        action = ":Ex<Enter>";
+      }
+    ];
   };
 }
