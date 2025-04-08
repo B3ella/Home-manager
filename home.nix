@@ -11,6 +11,9 @@
   home.username = "bella";
   home.homeDirectory = "/home/bella";
 
+  programs.git.userEmail = "goliveirapk@gmail.com";
+  programs.git.userName = "Isabella";
+
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
