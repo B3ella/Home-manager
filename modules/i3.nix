@@ -9,7 +9,7 @@
     (pkgs.writeShellScriptBin "status_bar" ''
       while :
       do
-	echo $(myDate) " | " $(systemStatus) " | " $(myBattery) " | " $(myConnection)
+	echo $(myDate) " | " $(systemStatus) " | " $(myBattery) " | " $(myConnection) " | " $(junipeiro_tree)
 	sleep 5
       done
     '')
@@ -30,6 +30,9 @@
     '')
     (pkgs.writeShellScriptBin "myMem" ''
       free -h | grep Mem | cut -d' ' -f 19
+    '')
+    (pkgs.writeShellScriptBin "junipeiro_tree" ''
+        echo "i look at you and it seems like nature has healed"
     '')
   ];
 
