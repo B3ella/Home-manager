@@ -5,6 +5,7 @@
     ./modules/i3.nix
     ./modules/alacritty.nix
     ./modules/neovim.nix
+    ./modules/zsh.nix
   ];
   programs.nvf.enableManpages = true;
 
