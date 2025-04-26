@@ -17,5 +17,7 @@
     history.ignoreAllDups = true;
     history.path = "$HOME/.zsh_history";
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
+
+    defaultKeymap = "vicmd";
   };
 }
