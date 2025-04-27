@@ -6,7 +6,6 @@
     ./modules/alacritty.nix
     ./modules/neovim.nix
     ./modules/zsh.nix
-    ./modules/themes.nix
     nix-colors.homeManagerModules.default
   ];
   colorScheme = nix-colors.colorSchemes.dracula;
