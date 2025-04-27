@@ -8,7 +8,7 @@
     ./modules/zsh.nix
     nix-colors.homeManagerModules.default
   ];
-  colorScheme = nix-colors.colorSchemes.dracula;
+  colorScheme = nix-colors.colorSchemes.kanagawa;
 
   programs.nvf.enableManpages = true;
 
