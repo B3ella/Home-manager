@@ -9,9 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nvf.url = "github:notashelf/nvf";
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = { nixpkgs, home-manager, nvf, ... }:
+  outputs = { nixpkgs, home-manager, nvf, nix-colors, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -24,7 +25,9 @@
         modules = [ 
           nvf.homeManagerModules.default
 	        ./home.nix
+          nix-colors.homeManagerModules.default
 	      ];
+        extraSpecialArgs = { inherit nix-colors; };
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

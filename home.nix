@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, nix-colors, pkgs, ... }:
 
 { 
   imports = [
@@ -6,7 +6,11 @@
     ./modules/alacritty.nix
     ./modules/neovim.nix
     ./modules/zsh.nix
+    ./modules/themes.nix
+    nix-colors.homeManagerModules.default
   ];
+  colorScheme = nix-colors.colorSchemes.dracula;
+
   programs.nvf.enableManpages = true;
 
   home.username = "bella";

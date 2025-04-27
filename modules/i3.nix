@@ -1,4 +1,4 @@
-{inputs, pkgs, ...}:
+{inputs, pkgs, config, ...}:
 
 {
   home.packages = [
@@ -44,11 +44,11 @@
       modifier = "Mod1";
 
       colors.focused = {
-        background = "#263014";
-        border = "#2f4704";
-        childBorder = "#2f4704";
-        indicator = "#2f4704";
-        text = "#ffffff";
+        background = "#${config.colorScheme.palette.base00}";
+        border = "#${config.colorScheme.palette.base01}";
+        childBorder = "#${config.colorScheme.palette.base01}";
+        indicator = "#${config.colorScheme.palette.base05}";
+        text = "#${config.colorScheme.palette.base05}";
 
       };
       fonts = {
@@ -61,13 +61,13 @@
         {
 	  colors = {
 	    activeWorkspace = {
-              background = "#000000";
-              border = "#000000";
-              text = "#ffffff";
+              background = "#${config.colorScheme.palette.base00}";
+              border = "#${config.colorScheme.palette.base01}";
+              text = "#${config.colorScheme.palette.base05}";
 	    };
 
-	    background = "#263014";
-	    statusline = "#ffffff";
+	    background = "#${config.colorScheme.palette.base00}";
+	    statusline = "#${config.colorScheme.palette.base05}";
 	  };
 	  fonts = {
 	    names = ["Dalfitra"];
