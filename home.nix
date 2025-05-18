@@ -6,6 +6,7 @@
     ./modules/alacritty.nix
     ./modules/neovim.nix
     ./modules/zsh.nix
+    ./modules/personal_website.nix
     nix-colors.homeManagerModules.default
   ];
   colorScheme = nix-colors.colorSchemes.kanagawa;
