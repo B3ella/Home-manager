@@ -13,5 +13,9 @@
         cd ~/Documents/General/2\ -\ Area/Professional/CV/
         md2pdf curriculo.md curriculo.pdf
     '')
+    (pkgs.writeShellScriptBin "update-spending_log" ''
+        cd ~/Desktop/projects/spending_log
+        python3 main.py 5
+    '')
   ];
 }
