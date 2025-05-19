@@ -9,5 +9,9 @@
         git add src/components/projects.astro
         git commit -m "chores: update files"
     '')
+    (pkgs.writeShellScriptBin "update-cv" ''
+        cd ~/Documents/General/2\ -\ Area/Professional/CV/
+        md2pdf curriculo.md curriculo.pdf
+    '')
   ];
 }
