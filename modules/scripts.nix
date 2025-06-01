@@ -17,10 +17,10 @@
         cd ~/Desktop/projects/spending_log
         python3 main.py 5
     '')
-    (pkgs.writeShellScriptBin "rendernote" ''
-        cd ~/General/
-        s="$1/$2.md"
-        d="/home/bella/$2.pdf"
+    (pkgs.writeShellScriptBin "render" ''
+        cd ~/General/render
+        s="$1.md"
+        d="/home/bella/$1.pdf"
         echo $s
         echo $d
         md2pdf "$s" "$d"
