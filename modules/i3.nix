@@ -82,7 +82,7 @@
         "Mod1+Return" = "exec alacritty";
         "Mod1+q" = "kill";
         "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
-	"Mod1+g" = "exec firefox";
+	"Mod1+g" = "exec qutebrowser";
 	"Mod1+o" = "exec obsidian";
 
         "Mod1+Left" = "focus left";
