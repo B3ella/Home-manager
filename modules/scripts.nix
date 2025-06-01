@@ -10,7 +10,7 @@
         git commit -m "chores: update files"
     '')
     (pkgs.writeShellScriptBin "update-cv" ''
-        cd ~/Documents/General/2\ -\ Area/Professional/CV/
+        cd ~/General/2\ -\ Area/Professional/CV/
         md2pdf curriculo.md curriculo.pdf
     '')
     (pkgs.writeShellScriptBin "update-spending_log" ''
