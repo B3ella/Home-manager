@@ -7,6 +7,7 @@
     ./modules/neovim.nix
     ./modules/zsh.nix
     ./modules/scripts.nix
+    ./modules/git.nix
     nix-colors.homeManagerModules.default
   ];
   colorScheme = nix-colors.colorSchemes.kanagawa;
@@ -15,10 +16,6 @@
 
   home.username = "bella";
   home.homeDirectory = "/home/bella";
-
-  programs.git.userEmail = "goliveirapk@gmail.com";
-  programs.git.userName = "Isabella";
-
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
