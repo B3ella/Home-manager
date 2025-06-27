@@ -9,15 +9,19 @@
     (pkgs.writeShellScriptBin "status_bar" ''
       while :
       do
-	echo $(myDate) " | " $(systemStatus) " | " $(myBattery) " | " $(myConnection) " | " $(junipeiro_tree)
-	sleep 5
+	      echo $(myDate) " | " $(systemStatus) " | " $(myBattery) $(myConnection) " | " $(junipeiro_tree)
+	      sleep 5
       done
     '')
     (pkgs.writeShellScriptBin "myDate" ''
       date -R | cut -d'-' -f 1
     '')
     (pkgs.writeShellScriptBin "myBattery" ''
-      echo $(echo -e "\U1F50B") $(battery | cut -d' ' -f 2)%
+      bat = battery | cut -d' ' -f 2
+      if [-n "$bat"]; then
+        echo -e "\U1F50B" $(bat)% " | "
+      fi
+        echo ""
     '')
     (pkgs.writeShellScriptBin "systemStatus" ''
       echo $(temp)c, $(myDisk), $(myMem)
