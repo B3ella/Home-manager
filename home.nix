@@ -9,6 +9,7 @@
     ./modules/scripts.nix
     ./modules/git.nix
     ./modules/qute.nix
+    ./modules/status.nix
     nix-colors.homeManagerModules.default
   ];
   colorScheme = nix-colors.colorSchemes.kanagawa;
