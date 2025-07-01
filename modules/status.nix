@@ -30,7 +30,7 @@
       nmcli g | sed -n '2 p' | cut -d' ' -f 1
     '')
     (pkgs.writeShellScriptBin "myDisk" ''
-      df -h | grep /dev/sda2 | cut -d' ' -f 8
+      dysk --color no -c free --csv | sed -n "2 p" | sed 's/,//g'
     '')
     (pkgs.writeShellScriptBin "myMem" ''
       free -h | grep Mem | cut -d' ' -f 19
