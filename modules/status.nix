@@ -27,7 +27,7 @@
       echo $(temp)c, $(myDisk), $(myMem)
     '')
     (pkgs.writeShellScriptBin "myConnection" ''
-      nmcli --get-values name -c no connection show --active | head -n 1
+      nmcli g | sed -n '2 p' | cut -d' ' -f 1
     '')
     (pkgs.writeShellScriptBin "myDisk" ''
       df -h | grep /dev/sda2 | cut -d' ' -f 8
