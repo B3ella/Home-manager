@@ -14,7 +14,7 @@
       done
     '')
     (pkgs.writeShellScriptBin "myDate" ''
-      date "+%a, %b, %H:%M"
+      date "+%a, %d, %H:%M"
     '')
     (pkgs.writeShellScriptBin "myBattery" ''
       bat = battery | cut -d' ' -f 2
