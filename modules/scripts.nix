@@ -25,5 +25,8 @@
         echo $d
         md2pdf "$s" "$d"
     '')
+    (pkgs.writeShellScriptBin "mount-usb" ''
+        sudo mount /dev/sdb /home/bella/usb
+    '')
   ];
 }
