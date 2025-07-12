@@ -36,7 +36,7 @@
       free -h | grep Mem | cut -d' ' -f 19
     '')
     (pkgs.writeShellScriptBin "facti" ''
-        echo "facti machina"
+        echo "COMO DIMINUI O TAMANHO DA FON"
     '')
   ];
 }
