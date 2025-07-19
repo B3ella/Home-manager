@@ -85,7 +85,7 @@
         "Mod1+7" = "workspace number 7";
         "Mod1+8" = "workspace number 8";
         "Mod1+9" = "workspace number 9";
-        "Mod1+Tab" = "workspace number 10";
+        "Mod1+0" = "workspace number 10";
 
 
         "Mod1+Shift+1" =
