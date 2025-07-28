@@ -20,7 +20,7 @@
     (pkgs.writeShellScriptBin "render" ''
         cd ~/General/render
         s="$1.md"
-        d="/home/bella/$1.pdf"
+        d="../Documents/$1.pdf"
         echo $s
         echo $d
         md2pdf "$s" "$d"
