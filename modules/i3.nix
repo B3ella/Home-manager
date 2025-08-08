@@ -17,9 +17,9 @@
 
       };
       fonts = {
-	names = ["Dalfitra"];
-	style = "Regular";
-	size = 15.0;
+	      names = ["Dalfitra"];
+	      style = "Regular";
+	      size = 15.0;
       };
 
       bars = [

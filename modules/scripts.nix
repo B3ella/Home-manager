@@ -28,5 +28,8 @@
     (pkgs.writeShellScriptBin "mount-usb" ''
         sudo mount /dev/sdb /home/bella/usb
     '')
+    (pkgs.writeShellScriptBin "install-fonts" ''
+        cp -r ~/.config/home-manager/fonts ~/.local/share/fonts
+    '')
   ];
 }
