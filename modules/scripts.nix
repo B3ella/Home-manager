@@ -21,9 +21,8 @@
         cd ~/General/render
         s="$1.md"
         d="../Documents/$1.pdf"
-        echo $s
-        echo $d
-        md2pdf "$s" "$d"
+        css="default.css"
+        md2pdf "$s" "$d" --css=$css
     '')
     (pkgs.writeShellScriptBin "mount-usb" ''
         sudo mount /dev/sdb /home/bella/usb
