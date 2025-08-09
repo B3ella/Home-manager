@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       font.normal = {
-        family = "OpenDyslexicMono";
+      family = "NeverMindRoundedMono";
       };
     };
   };
