@@ -48,7 +48,7 @@
         "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
 	      "Mod1+g" = "exec qutebrowser";
 	      "Mod1+o" = "exec obsidian";
-        "Mod1+p" = "exec scrot -s /home/bella/print.png";
+        "Mod1+P" = "exec scrot -s /home/bella/print.png";
 
         "Mod1+q" = "kill";
 
