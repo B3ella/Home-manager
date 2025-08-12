@@ -48,6 +48,7 @@
         "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
 	      "Mod1+g" = "exec qutebrowser";
 	      "Mod1+o" = "exec obsidian";
+	      "Mod1+s" = "exec keepassxc";
         "Mod1+P" = "exec scrot -s /home/bella/print.png";
 
         "Mod1+q" = "kill";
@@ -66,8 +67,6 @@
         "Mod1+v" = "split v";
         "Mod1+f" = "fullscreen toggle";
 
-        "Mod1+s" = "layout stacking";
-        "Mod1+w" = "layout tabbed";
         "Mod1+e" = "layout toggle split";
 
         "Mod1+Shift+space" = "floating toggle";
