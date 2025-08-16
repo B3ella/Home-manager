@@ -18,7 +18,7 @@
         python3 main.py 5
     '')
     (pkgs.writeShellScriptBin "render" ''
-        cd ~/General/render
+        cd ~/Notes
         s="$1.md"
         d="../Documents/$1.pdf"
         css="default.css"
