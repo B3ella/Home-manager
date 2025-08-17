@@ -4,6 +4,11 @@
   home.packages = [
     (pkgs.writeShellScriptBin "home-startup" ''
       feh --bg-scale /home/bella/.wallpaper.png
+      daily-note
+    '')
+    (pkgs.writeShellScriptBin "daily-note" ''
+      cd ~/Projects/daily-note
+      python3 main.py
     '')
     (pkgs.writeShellScriptBin "update-site" ''
         cd ~/Projects/personal-website 
