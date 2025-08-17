@@ -2,6 +2,9 @@
 
 {
   home.packages = [
+    (pkgs.writeShellScriptBin "home-startup" ''
+      feh --bg-scale /home/bella/.wallpaper.png
+    '')
     (pkgs.writeShellScriptBin "update-site" ''
         cd ~/Projects/personal-website 
         python3 cms.py

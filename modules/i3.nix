@@ -118,7 +118,7 @@
         "Mod1+r" = "mode resize";
       };
       startup = [
-        { command = "feh --bg-scale /home/bella/.wallpaper.png"; }
+        { command = "home-startup"; }
       ];
 
       gaps = {
