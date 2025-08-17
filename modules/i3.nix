@@ -64,7 +64,7 @@
         "Mod1+Shift+Right" = "move right";
 
         "Mod1+h" = "split h";
-        "Mod1+v" = "split v";
+        "Mod1+j" = "split v";
         "Mod1+f" = "fullscreen toggle";
 
         "Mod1+e" = "layout toggle split";
