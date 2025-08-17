@@ -3,8 +3,11 @@
 {
   home.packages = [
     (pkgs.writeShellScriptBin "home-startup" ''
-      feh --bg-scale /home/bella/.wallpaper.png
+      set-bg
       daily-note
+    '')
+    (pkgs.writeShellScriptBin "set-bg" ''
+      feh --bg-scale ~/.config/home-manager/imgs/bg.png
     '')
     (pkgs.writeShellScriptBin "daily-note" ''
       cd ~/Projects/daily-note
