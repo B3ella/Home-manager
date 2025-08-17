@@ -19,7 +19,7 @@
       fonts = {
 	      names = ["Dalfitra"];
 	      style = "Regular";
-	      size = 15.0;
+	      size = 30.0;
       };
 
       bars = [
@@ -37,7 +37,7 @@
 	  fonts = {
 	    names = ["Dalfitra"];
 	    style = "Regular";
-	    size = 12.0;
+	    size = 24.0;
 	  };
 	  statusCommand = "status_bar";
 	}
