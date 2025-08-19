@@ -11,7 +11,7 @@
     '')
     (pkgs.writeShellScriptBin "daily-note" ''
       cd ~/Projects/daily-note
-      python3 main.py
+      ./templater
     '')
     (pkgs.writeShellScriptBin "update-site" ''
         cd ~/Projects/personal-website 
