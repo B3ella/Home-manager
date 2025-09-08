@@ -49,7 +49,7 @@
 	      "Mod1+g" = "exec qutebrowser";
 	      "Mod1+o" = "exec obsidian";
 	      "Mod1+s" = "exec keepassxc";
-        "Mod1+P" = "exec scrot -s /home/bella/print.png";
+        "Mod1+P" = "exec scrot -s /home/bella/Photos/print.png";
 
         "Mod1+q" = "kill";
 
