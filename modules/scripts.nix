@@ -28,13 +28,6 @@
         cd ~/Desktop/projects/spending_log
         python3 main.py 5
     '')
-    (pkgs.writeShellScriptBin "render" ''
-        cd ~/Notes
-        s="$1.md"
-        d="../Documents/$1.pdf"
-        css="default.css"
-        md2pdf "$s" "$d" --css=$css
-    '')
     (pkgs.writeShellScriptBin "mount-usb" ''
         sudo mount /dev/sdb /home/bella/usb
     '')
