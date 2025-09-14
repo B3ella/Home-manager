@@ -6,6 +6,9 @@
       set-bg
       daily-note
     '')
+    (pkgs.writeShellScriptBin "status_background" ''
+      set-bg
+    '')
     (pkgs.writeShellScriptBin "set-bg" ''
       feh --bg-scale ~/.config/home-manager/imgs/bg.png
     '')
