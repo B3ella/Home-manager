@@ -39,6 +39,7 @@
       sudo nixos-rebuild switch
     '')
     (pkgs.writeShellScriptBin "nrb" ''
+      nixos-generate-config
       sudo nixos-rebuild boot
       reboot
     '')
