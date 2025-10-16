@@ -36,6 +36,7 @@
       nvim .
     '')
     (pkgs.writeShellScriptBin "nrs" ''
+      sudo nixos-generate-config
       sudo nixos-rebuild switch
     '')
     (pkgs.writeShellScriptBin "nrb" ''
