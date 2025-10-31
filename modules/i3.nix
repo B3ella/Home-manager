@@ -72,8 +72,6 @@
         "Mod1+Shift+space" = "floating toggle";
         "Mod1+space" = "focus mode_toggle";
 
-        "Mod1+a" = "focus parent";
-
         "Mod1+Shift+minus" = "move scratchpad";
         "Mod1+minus" = "scratchpad show";
 
@@ -116,6 +114,9 @@
         "Mod4+l" = "exec i3-msg exit";
 
         "Mod1+r" = "mode resize";
+
+        "Mod1+a" = "exec change-bg";
+        "Mod1+b" = "exec set-bg";
       };
       startup = [
         { command = "home-startup"; }

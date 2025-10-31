@@ -9,7 +9,6 @@
     (pkgs.writeShellScriptBin "status_bar" ''
       while :
       do
-        status_background
 	      echo $(myDate) " | " $(systemStatus) " | " $(myBattery) $(myConnection) " | " $(facti)
 	      sleep 5
       done
