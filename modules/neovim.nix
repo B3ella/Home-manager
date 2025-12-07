@@ -1,6 +1,7 @@
 { pkgs, libs, ... }:
 
 {
+  programs.neovim.extraConfig = "hi Normal guibg=NONE";
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
     globals.mapleader = " ";
@@ -9,6 +10,7 @@
       enable = true;
       name = "gruvbox";
       style = "dark";
+      transparent = true;
     };
 
     options = {
