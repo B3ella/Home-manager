@@ -11,6 +11,7 @@
         "<Ctrl+g>" = "open -t https://github.com/B3ella";
         "<Ctrl+m>" = "open -t https://mail.google.com/mail/u/0/#inbox";
         "<Ctrl+j>" = "open -t https://github.com/gathddu";
+        "<Ctrl+k>" = "open -t https://github.com/kai-sz";
       };
     };
   };
