@@ -44,6 +44,7 @@
         change-bg = {
           Down = "exec set-bg";
           Up = "exec change-bg";
+          Left = "exec change-bg-2";
           Escape = "mode default";
         };
       };

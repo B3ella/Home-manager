@@ -36,7 +36,7 @@
       free -h | grep Mem | cut -d' ' -f 19
     '')
     (pkgs.writeShellScriptBin "facti" ''
-        echo "Someone has to."
+        echo "Bobo Cancun :3"
     '')
   ];
 }

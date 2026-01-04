@@ -12,6 +12,10 @@
     (pkgs.writeShellScriptBin "set-bg" ''
       feh --bg-scale ~/.config/home-manager/imgs/bg.png
     '')
+    (pkgs.writeShellScriptBin "change-bg-2" ''
+      feh --bg-scale ~/Photos/lain_bg_2.jpg
+      ~/Photos/lain_bg_2.jpg
+    '')
     (pkgs.writeShellScriptBin "change-bg" ''
       feh --bg-scale ~/.config/home-manager/imgs/about-time.png
     '')
