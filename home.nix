@@ -26,7 +26,8 @@
       cd /etc/nixos
     '')
     (pkgs.writeShellScriptBin "editnix" ''
-      nvim /etc/nixos
+      cd /etc/nixos
+      nvim .
     '')
     (pkgs.writeShellScriptBin "gotohome" ''
       cd ~/.config/home-manager
