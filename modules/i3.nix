@@ -53,7 +53,6 @@
         "Mod1+Return" = "exec alacritty";
         "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
 	      "Mod1+g" = "exec qutebrowser";
-	      "Mod1+o" = "exec obsidian";
 	      "Mod1+s" = "scratchpad show";
         "Mod1+P" = "exec scrot -s /home/bella/Photos/print.png";
 
@@ -124,14 +123,14 @@
       };
       assigns = {
         "web" = [{ class = "^qutebrowser$"; }];
-        "notes" = [{ class = "^obsidian$"; }];
+        "Books" = [{ class = "^Okular$"; }];
         "terminal" = [{ class = "^Alacritty$"; }];
         "passwords" = [{ class = "^KeePassXC$"; }];
       };
 
       startup = [
         { command = "home-startup"; }
-        { command = "obsidian"; }
+        { command = "okular"; }
         { command = "qutebrowser"; }
         { command = "alacritty"; }
         { command = "keepassxc"; }
