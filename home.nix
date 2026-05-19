@@ -48,6 +48,9 @@
       home-manager switch
       reloadi3
     '')
+    (pkgs.writeShellScriptBin "nsz" ''
+        nix-shell . --command zsh
+    '')
   ];
   
   home.sessionVariables = {
