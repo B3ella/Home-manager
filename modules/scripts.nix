@@ -4,7 +4,10 @@
   home.packages = [
     (pkgs.writeShellScriptBin "home-startup" ''
       set-bg
-      daily-note
+    '')
+    (pkgs.writeShellScriptBin "notes" ''
+      cd ~/Notes
+      nvim daily-note.md
     '')
     (pkgs.writeShellScriptBin "status_background" ''
       set-bg
